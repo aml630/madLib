@@ -2,8 +2,8 @@ using Nancy;
 using madLibLibrary;
 
   namespace test {
-      public class HomeModule : NancyModule {
-        public HomeModule() {
+      public class AlexModule : NancyModule {
+        public AlexModule() {
 
         Get["/form"] = _ => {
           return View["form.html"];
@@ -23,5 +23,5 @@ using madLibLibrary;
           return View["story.html", exampleStory];
         };
       }
-  }
+   }
 }
